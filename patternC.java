@@ -1,0 +1,18 @@
+public class patternC {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 7; i++) {
+            for (int j = 1; j <= 7; j++) {
+                if (
+                    (i == 1 && j > 1) ||        // Top horizontal line
+                    (i == 7 && j > 1) ||        // Bottom horizontal line
+                    (j == 1 && i > 1 && i < 7)  // Left vertical line
+                ) {
+                    System.out.print("+");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
